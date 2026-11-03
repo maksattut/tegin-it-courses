@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; require-trusted-types-for 'script'; trusted-types tegin; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>TEGIN IT Courses — GitHub-тағы тегін IT-курстар</title>
+<meta name="description" content="TEGIN IT Courses: GitHub-тағы 140 тегін IT-ресурс, әрқайсысына Roadmap пен скетчбук, фокус-таймер және өз бетінше оқу әдістері. Қазақша және орысша.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TEGIN IT Courses — тегін IT-курстар / бесплатные IT-курсы">
+<meta property="og:description" content="140 тегін ресурс, Roadmap-скетчбуктер, фокус-таймер. 140 бесплатных ресурсов, Roadmap-скетчбуки, фокус-таймер.">
+<meta property="og:image" content="icons/og-image.png">
+<meta name="theme-color" content="#EAF1F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05141B" media="(prefers-color-scheme: dark)">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="TEGIN">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="64x64" href="icons/favicon-64.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/geologica-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geologica-cyrillic-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/golos-text-cyrillic-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/logo/logo-512.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="assets/style.d9828de5b2.css">
+<script src="assets/boot.a219929d4a.js"></script>
+</head>
+<body class="first-load">
+<div class="aurora" aria-hidden="true"></div>
+<a class="skip" href="#main" data-i18n="skipLink">Мазмұнға өту</a>
+
+<svg class="defs-svg" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gradWork" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2EC4DE"/><stop offset="1" stop-color="#00718C"/></linearGradient>
+    <linearGradient id="gradBreak" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5C542"/><stop offset="1" stop-color="#E08E00"/></linearGradient>
+  </defs>
+</svg>
+
+<header class="top glass" id="header">
+  <div class="wrap">
+    <a class="brand" href="#/" id="brandLink">
+      <img class="brand-logo" src="assets/logo/logo-128.webp" width="36" height="36" alt="" decoding="async">
+      <span class="brand-text"><b data-i18n="brand">TEGIN</b><small data-i18n="brandSub">IT Courses</small></span>
+    </a>
+    <nav class="seg tabs-top" id="tabsTop" data-i18n-aria="tabsLabel" aria-label="Бөлімдер">
+      <span class="seg-thumb" aria-hidden="true"></span>
+      <a href="#/" data-route="catalog"><span data-i18n="tabCatalog">Каталог</span></a>
+      <a href="#/focus" data-route="focus"><span data-i18n="tabFocus">Фокус</span></a>
+      <a href="#/methods" data-route="methods"><span data-i18n="tabMethods">Әдістер</span></a>
+    </nav>
+    <div class="actions">
+      <div class="seg lang-seg" role="group" id="langSeg" data-i18n-aria="langGroup" aria-label="Тіл">
+        <span class="seg-thumb" aria-hidden="true"></span>
+        <button type="button" data-lang="kk" lang="kk" aria-pressed="true">Қазақша</button>
+        <button type="button" data-lang="ru" lang="ru" aria-pressed="false">Русский</button>
+      </div>
+      <button type="button" class="icon-btn install-btn" id="installBtn" hidden data-i18n-aria="installAria" aria-label="Қолданбаны орнату"><span data-icon="download"></span></button>
+      <button type="button" class="icon-btn" id="themeBtn" aria-label="Түнгі режим">
+        <span data-icon="moon" data-icon-class="theme-ic moon"></span>
+        <span data-icon="sun" data-icon-class="theme-ic sun"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="swap-area">
+  <!-- ============ CATALOG ============ -->
+  <section class="view" data-view="catalog" aria-labelledby="h1">
+    <div class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <div class="logo-stage" id="logoStage">
+            <span class="logo-glow" aria-hidden="true"></span>
+            <span class="logo-ring" aria-hidden="true"></span>
+            <span class="logo-tilt"><span class="logo-mask">
+              <img class="logo-img" src="assets/logo/logo-512.webp" srcset="assets/logo/logo-256.webp 256w, assets/logo/logo-512.webp 512w, assets/logo/logo-1024.webp 1024w" sizes="(min-width: 1024px) 420px, 132px" width="512" height="512" data-i18n-alt="logoAlt" alt="TEGIN логотипі" decoding="async" fetchpriority="high">
+              <span class="logo-sheen" aria-hidden="true"></span>
+            </span></span>
+          </div>
+          <h1 id="h1">GitHub-тағы тегін IT-курстар мен оқу ресурстары</h1>
+          <p class="lead" data-i18n="lead"></p>
+          <div class="search glass" id="searchBox">
+            <span data-icon="search" data-icon-class="search-ic"></span>
+            <label class="sr" for="q" data-i18n="searchLabel">Ресурс іздеу</label>
+            <input id="q" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" maxlength="100">
+            <span class="kbd" aria-hidden="true">/</span>
+            <button type="button" class="clear" id="clearBtn" hidden><span data-icon="x"></span><span class="sr" data-i18n="clear"></span></button>
+          </div>
+          <p class="status" id="status" aria-live="polite"></p>
+          <div class="hero-links" id="heroLinks">
+            <a class="btn btn-glass btn-sm" href="#/focus"><span data-icon="timer"></span><span data-i18n="heroFocus">Фокус-таймер</span></a>
+            <a class="btn btn-glass btn-sm" href="#/methods"><span data-icon="compass"></span><span data-i18n="heroMethods">Оқу әдістері</span></a>
+            <button type="button" class="btn btn-glass btn-sm" data-contact><span data-icon="chat"></span><span data-i18n="contactBtn">Автормен байланысу</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="install-card glass" id="installCard" hidden>
+        <img class="app-ic" src="icons/icon-192.png" alt="" width="48" height="48">
+        <div class="txt"><b data-i18n="installTitle">Телефонға орнату</b><span data-i18n="installText"></span></div>
+        <div class="row-actions">
+          <button type="button" class="btn btn-ghost btn-sm" id="installLater" data-i18n="installLater">Кейін</button>
+          <button type="button" class="btn btn-primary btn-sm" id="installGo" data-i18n="install">Орнату</button>
+        </div>
+      </div>
+
+      <aside class="note panel" id="note">
+        <span data-icon="info"></span>
+        <p><strong data-i18n="noteTitle">Маңызды.</strong> <span data-i18n="note"></span></p>
+      </aside>
+
+      <section id="start" aria-labelledby="startTitle">
+        <h2 class="sec-title" id="startTitle" data-i18n="startTitle">Неден бастау керек</h2>
+        <p class="sec-sub" data-i18n="startSub"></p>
+        <ol class="top-list" id="topList"></ol>
+      </section>
+
+      <section class="catalog" id="catalog" aria-labelledby="allTitle">
+        <h2 class="sec-title" id="allTitle" data-i18n="allTitle">Барлық бағыттар</h2>
+        <div class="cat-layout">
+          <nav class="cat-nav glass" id="catNav" data-i18n-aria="navLabel" aria-label="Бағыттар"><ul id="navList"></ul></nav>
+          <div>
+            <div id="sections"></div>
+            <div class="empty" id="empty" hidden>
+              <p id="emptyText"></p>
+              <button type="button" class="btn btn-glass" id="emptyClear" data-i18n="clear">Іздеуді тазалау</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topics" id="topics" aria-labelledby="topicsTitle">
+        <h2 class="sec-title" id="topicsTitle" data-i18n="topicsTitle">Әрі қарай іздеу үшін</h2>
+        <p class="sec-sub" data-i18n="topicsSub"></p>
+        <ul class="topic-list" id="topicList"></ul>
+      </section>
+
+      <section class="contact glass" id="contact" aria-labelledby="contactTitle">
+        <div class="contact-text">
+          <h2 class="sec-title" id="contactTitle" data-i18n="contactTitle">Оқуда көмек керек пе?</h2>
+          <p data-i18n="contactText"></p>
+        </div>
+        <div class="contact-actions">
+          <button type="button" class="btn btn-primary" data-contact><span data-icon="chat"></span><span data-i18n="contactBtn">Автормен байланысу</span></button>
+          <a class="btn btn-glass" data-tg target="_blank" rel="noopener noreferrer"><span data-icon="send"></span><span data-i18n="tgBtn">Telegram арқылы жазу</span></a>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ============ FOCUS ============ -->
+  <section class="view" data-view="focus" aria-labelledby="focusTitle" hidden>
+    <div class="wrap">
+      <div class="view-head">
+        <h1 class="view-title" id="focusTitle" data-i18n="focusTitle">Фокус-таймер</h1>
+        <p class="view-sub" data-i18n="focusSub"></p>
+      </div>
+      <div class="focus-grid">
+        <div class="timer-card glass" id="timerCard">
+          <div class="mcar-wrap">
+            <button type="button" class="mcar-arrow prev" id="mPrev" data-i18n-aria="prevMethods" aria-label="Алдыңғы әдіс"><span data-icon="left"></span></button>
+            <div class="mcar" id="mcar" role="radiogroup"></div>
+            <button type="button" class="mcar-arrow next" id="mNext" data-i18n-aria="nextMethods" aria-label="Келесі әдіс"><span data-icon="right"></span></button>
+          </div>
+          <p class="method-info" id="methodInfo" aria-live="polite"></p>
+          <div class="dial" id="dial">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="halo" cx="60" cy="60" r="52"/>
+              <circle class="track" cx="60" cy="60" r="52"/>
+              <circle class="prog" id="ring" cx="60" cy="60" r="52" pathLength="1" stroke-dashoffset="1"/>
+            </svg>
+            <div class="dial-center">
+              <span class="phase" id="phase"></span>
+              <span class="time" id="time" role="timer" aria-live="off">25:00</span>
+              <span class="dial-course" id="dialCourse"></span>
+            </div>
+          </div>
+          <div class="cycles" id="cycles" aria-hidden="true"></div>
+          <div class="controls">
+            <button type="button" class="icon-btn" id="resetBtn"><span data-icon="reset"></span><span class="sr" data-i18n="reset"></span></button>
+            <button type="button" class="btn btn-primary" id="playBtn"><span class="ic-slot" id="playIc"></span><span id="playLbl"></span></button>
+            <button type="button" class="icon-btn" id="skipBtn"><span class="ic-slot" id="skipIc"></span><span class="sr" id="skipLbl"></span></button>
+          </div>
+          <div class="custom-row" id="customRow" hidden>
+            <div class="stepper"><button type="button" data-step="work:-5" aria-label="−5"><span data-icon="minus"></span></button><span id="cwork"></span><button type="button" data-step="work:5" aria-label="+5"><span data-icon="plus"></span></button></div>
+            <div class="stepper"><button type="button" data-step="brk:-1" aria-label="−1"><span data-icon="minus"></span></button><span id="cbrk"></span><button type="button" data-step="brk:1" aria-label="+1"><span data-icon="plus"></span></button></div>
+          </div>
+          <div class="timer-meta">
+            <div class="select-wrap">
+              <label for="courseSel" data-i18n="course">Курс</label>
+              <select class="select" id="courseSel"></select>
+              <span data-icon="chevron" data-icon-class="select-ic"></span>
+            </div>
+            <div class="toggles">
+              <button type="button" class="toggle" id="tSound" aria-pressed="true"><span data-icon="volume"></span><span data-i18n="sound"></span></button>
+              <button type="button" class="toggle" id="tNotify" aria-pressed="false"><span data-icon="bell"></span><span data-i18n="notify"></span></button>
+              <button type="button" class="toggle" id="tWake" aria-pressed="false"><span data-icon="screen"></span><span data-i18n="wake"></span></button>
+            </div>
+            <p class="hint" data-i18n="bgHint"></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="stats">
+            <div class="stat panel"><b id="sToday">0</b><span data-i18n="statToday"></span></div>
+            <div class="stat panel"><b id="sWeek">0</b><span data-i18n="statWeek"></span></div>
+            <div class="stat panel"><b id="sStreak">0</b><span data-i18n="statStreak"></span></div>
+          </div>
+          <section class="my" aria-labelledby="myTitle">
+            <div class="my-head"><h2 id="myTitle" data-i18n="myTitle">Менің курстарым</h2></div>
+            <p class="sec-sub my-sub" data-i18n="mySub"></p>
+            <ul class="my-list" id="myList"></ul>
+            <div class="my-empty panel" id="myEmpty" hidden>
+              <p data-i18n="myEmpty"></p>
+              <a class="btn btn-primary btn-sm" href="#/" data-i18n="toCatalog">Каталогқа өту</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METHODS ============ -->
+  <section class="view" data-view="methods" aria-labelledby="methodsTitle" hidden>
+    <div class="wrap">
+      <div class="view-head">
+        <h1 class="view-title" id="methodsTitle" data-i18n="methodsTitle">Өз бетінше оқу әдістері</h1>
+        <p class="view-sub" data-i18n="methodsSub"></p>
+      </div>
+      <ul class="method-grid" id="methodGrid"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot swap-area">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/logo/logo-128.webp" width="44" height="44" alt="" decoding="async">
+      <p class="disclaimer" data-i18n="disclaimer"></p>
+    </div>
+    <div class="author">
+      <p data-i18n="author">Жинақты дайындаған — Макс, ЖИ-инженер.</p>
+      <div class="row-actions">
+        <button type="button" class="btn btn-primary" data-contact><span data-icon="chat"></span><span data-i18n="contactBtn">Автормен байланысу</span></button>
+        <a class="btn btn-glass" data-tg target="_blank" rel="noopener noreferrer"><span data-icon="send"></span><span data-i18n="tgBtn">Telegram арқылы жазу</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="tabbar glass" id="tabbar" data-i18n-aria="tabsLabel" aria-label="Бөлімдер">
+  <span class="tabbar-thumb" aria-hidden="true"></span>
+  <a href="#/" data-route="catalog"><span data-icon="book"></span><span data-i18n="tabCatalog">Каталог</span></a>
+  <a href="#/focus" data-route="focus"><span data-icon="timer"></span><span data-i18n="tabFocus">Фокус</span></a>
+  <a href="#/methods" data-route="methods"><span data-icon="compass"></span><span data-i18n="tabMethods">Әдістер</span></a>
+</nav>
+
+<div class="sheet-root" id="sheetRoot" hidden>
+  <div class="sheet-backdrop" data-close></div>
+  <div class="sheet glass-strong" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" id="sheet">
+    <div class="sheet-grab" id="sheetGrab">
+      <div class="sheet-handle"></div>
+      <div class="sheet-head">
+        <h2 id="sheetTitle"></h2>
+        <button type="button" class="icon-btn" data-close id="sheetClose"><span data-icon="x"></span><span class="sr" data-i18n="close"></span></button>
+      </div>
+    </div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<noscript><p class="noscript">JavaScript қосыңыз / Включите JavaScript</p></noscript>
+<script src="assets/app.6e0bf2a719.js"></script>
+</body>
+</html>

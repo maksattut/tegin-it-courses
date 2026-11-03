@@ -1,0 +1,23 @@
+{
+  "name": "TEGIN IT Courses",
+  "short_name": "TEGIN",
+  "description": "140 тегін IT-ресурс: Roadmap-скетчбуктер, фокус-таймер, оқу әдістері. 140 бесплатных IT-ресурсов: Roadmap-скетчбуки, фокус-таймер, методы учёбы.",
+  "lang": "kk",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0C2530",
+  "theme_color": "#EAF1F4",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Фокус-таймер", "short_name": "Фокус", "url": "./#/focus", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Оқу әдістері / Методы", "short_name": "Әдістер", "url": "./#/methods", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}
